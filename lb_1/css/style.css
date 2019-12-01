@@ -1,0 +1,165 @@
+body {
+    background-color: #1A535C;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+.container {
+    background-color: #4ECDC4;
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+}
+
+.container * {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.main_title {
+    text-align: center;
+    position: inherit;
+    color: #F7FFF7;
+    padding-top: 10px;
+}
+
+.html {
+    color: #FF6B6B;
+}
+
+h2,
+h3 {
+    text-align: center;
+    color: #F7FFF7;
+    text-transform: uppercase;
+}
+
+.at_title {
+    font-size: 40pt;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.fa {
+    font-size: 13pt;
+    color: #F7FFF7;
+}
+
+.sa {
+    font-size: 14pt;
+    font-family: 'Oswald', sans-serif;
+    color: #F7FFF7;
+}
+
+.ta {
+    font-size: 15pt;
+    font-family: 'Calistoga', cursive;
+    color: #F7FFF7;
+}
+
+.fa_title {
+    font-size: 20pt;
+    padding-bottom: 10px;
+    color: #FFE66D;
+}
+
+.sa_title {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 25pt;
+    color: #FF6B6B;
+}
+
+.ta_title {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 30pt;
+    color: #FFE66D;
+}
+
+.f_words {
+    color: #9B4DF7;
+    margin: 0;
+    padding: 3px;
+    text-transform: uppercase;
+}
+
+.s_words {
+    color: #F1813A;
+    margin: 0;
+    padding: 3px;
+    text-transform: uppercase;
+}
+
+.t_words {
+    color: #c44747;
+    margin: 0;
+    padding: 3px;
+    text-transform: uppercase;
+}
+
+.list {
+    padding-top: 30px;
+    padding-left: 500px;
+}
+
+.f_list {
+    list-style-type: disc;
+}
+
+.s_list {
+    list-style-type: square;
+}
+
+.list li {
+    color: #33d;
+    font-weight: bold;
+    padding-top: 5px;
+    font-size: 18pt;
+}
+
+.list ul li {
+    color: #fff;
+    font-weight: normal;
+    font-size: 14pt;
+}
+
+.list_title {
+    padding-top: 30px;
+    text-shadow: 5px 5px 10px #333;
+}
+.table{
+    margin: auto;
+    text-align: center;
+}
+.table_title{
+    padding-bottom: 10px;
+    padding-top: 30px;
+    text-shadow: 5px 5px 10px #333;
+}
+.table tr td{
+    background-color: #fff;
+}
+.table tr td a{
+    color: #333;
+}
+.table_photo{
+    background: url(https://s1.tchkcdn.com/g-d6TY1XE90TfqL-EFonETDA/1/43407/660x480/f/0/shrek.jpg);
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+}
+a{
+    text-decoration: none;
+    color: #F7FFF7;
+}
+a:visited{
+    color: #F7FFF7;
+}
+
