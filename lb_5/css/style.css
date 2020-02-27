@@ -1,3 +1,7 @@
+@font-face 
+{
+    font-family:Lato;
+src:url('../fonts/Lato-Black.ttf')/* Указываем местонахождение нашего шрифта */ }
 body {
     background-color: #1A535C;
 }
@@ -27,6 +31,7 @@ body {
     position: inherit;
     color: #F7FFF7;
     padding-top: 10px;
+    background: linear-gradient(to left, white, black)
 }
 
 .html {
@@ -81,6 +86,7 @@ h3 {
     padding-bottom: 10px;
     font-size: 30pt;
     color: #FFE66D;
+    background: radial-gradient(purple, blue, skyblue, green, yellow, orange, red)
 }
 
 .f_words {
@@ -133,6 +139,8 @@ h3 {
 .list_title {
     padding-top: 30px;
     text-shadow: 5px 5px 10px #333;
+    border: 10px black solid;
+    border-image: url(http://www.youloveit.ru/uploads/gallery/main/777/youloveit_ru_svinka_pepa_peppa_pig22.png) 30 round round;
 }
 .table{
     margin: auto;
@@ -163,5 +171,58 @@ a{
 }
 a:visited{
     color: #F7FFF7;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: #F7FFF7;
+    text-align: center;
+    margin: 0 auto;
+}
+
+a::before {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    transform-origin: 100%;
+    background-color : red;
+    transform: scaleX(0);
+    transition: all 0.5s;
+}
+
+a:hover::before {
+    transform: scaleX(1);
+}
+
+a::after {
+    content: '';
+    display: block;
+    height: 2px;
+    width: 100%;
+    transform-origin: 0%;
+    background-color : red;
+    transform: scaleX(0);
+    transition: all 0.5s;
+}
+
+a:hover::after {
+    transform: scaleX(1);
+}
+@-webkit-keyframes anim {
+0% {margin-left:3px;margin-top:3px;background-color:#7Fff05;}
+30% {margin-left:300px;margin-top:250px;background-color:#7aa055;}
+60% {margin-left:3px;margin-top:250px;background-color:red;}
+100% {margin-left:3px;margin-top:3px;background-color:#7F0055;}
+}
+#wrap1 {
+position: absolute;
+border:2px #000 solid;
+background-color:#7F0055;
+height:100px;
+width:100px;
+font-size:2em;
+animation:anim 6s 3;
+-webkit-animation:anim 6s 3;
 }
 

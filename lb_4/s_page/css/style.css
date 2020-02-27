@@ -14,9 +14,12 @@ body {
     width: 100%;
     height: 100vh;
     margin: auto;
+    box-shadow: 0px 0px 100px black;
+    position: relative;
 }
 h3{
     text-align: center;
+/*    position: fixed;*/
 }
 .container * {
     padding-left: 30px;
@@ -33,9 +36,7 @@ h3{
     padding-top: 30px;
 }
 .image{
-    position: inherit;
-    width: 70%;
-    height: auto;
+    width: 800px;
     padding-left: 350px;
     padding-top: 30px;
 }
@@ -47,9 +48,12 @@ h3{
     color: #fff
 }
 .fin{
+    position: absolute;
     background-color: #fff;
     border-radius: 10px;
+    border: 5px black solid;
     width: 400px;
+    transform:translateY(100px) translateX(400px)
 }
 .t_fin{
     font-size: 14pt;

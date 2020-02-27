@@ -1,15 +1,20 @@
 body {
     background-color: #1A535C;
+    background: url(https://www.itl.cat/pngfile/big/32-323495_fall-wallpaper-hd-photo-full-hd-navratri-background.jpg) no-repeat top right;
+    background-size: 300px 300px;
+    background-attachment: fixed;
+    background-color: inherit;
 }
 
 * {
     box-sizing: border-box;
     margin: 0;
     font-family: 'Lato', sans-serif;
+    text-align: justify;
 }
 
 .container {
-    background-color: #4ECDC4;
+/*    background-color: #4ECDC4;*/
     max-width: 1200px;
     width: 100%;
     height: 100vh;
@@ -23,7 +28,7 @@ h3{
     padding-right: 30px;
 }
 .ar1, .ar2{
-    color: #F7FFF7;
+    color: grey;
     font-size: 16pt;
 }
 .ar1_title, .ar2_title{
@@ -44,16 +49,12 @@ h3{
     text-shadow: 5px 5px 10px #333;
     padding-top: 30px;
     text-align: center;
-    color: #fff
+    color: #333;
 }
 .fin{
-    background-color: #fff;
-    border-radius: 10px;
-    width: 400px;
-}
-.t_fin{
     font-size: 14pt;
-    text-align: center;
+    background-color: grey;
+    border-radius: 10px;
 }
 a{
     text-decoration: none;
