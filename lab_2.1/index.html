@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function getCoordinates() { 
+            navigator.geolocation.getCurrentPosition(showCoordinates, whenError); 
+        } 
+        
+        function showCoordinates(position) { 
+            document.getElementById("label").innerHTML = "Широта: " + position.coords.latitude + "<br/>" + "Долгота: " + position.coords.longitude + "<br>" + position.coords;
+        }
+
+        function whenError(){
+            alert("Ну ты индеец я балдею");
+        }
+    </script>
+
+    <h1 align="center">Я, <mark>Шумский Евгений Сергеевич</mark>, изучаю HTML5</h1>
+
+    <video width="400" height="300" controls="controls" poster="poster.png">
+        <source src="vid.mp4" type='video/mp4'>
+    </video>
+
+    <audio controls>
+        <source src="vid.mp4">
+    </audio>
+
+    <input type="button" value="Жми индеец" onclick="getCoordinates()">
+    
+    <br><br>
+
+    <div id="label"></div>
+</body>
+</html>
