@@ -67,29 +67,78 @@
 
         function  drawDiagr(){
         
-            ctx.arc(200, 200, 100, 0, pi/2)
-            ctx.fillStyle = "pink"
+            ctx.lineWidth = 0;
+            
+            ctx.beginPath();
+            
+            ctx.fillStyle = "skyblue";
+            ctx.arc(200, 200, 150, 0, 2*pi);
             ctx.fill();
+
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.arc(200, 200, 100, 0, pi/2);
+            ctx.fillStyle = "pink";
+            ctx.fill();
+            ctx.closePath();
 
             ctx.beginPath();
             ctx.moveTo(301, 200);
             ctx.lineTo(200, 200);
-            ctx.lineTo(201, 300)
-            ctx.closePath();
-            ctx.fillStyle = "pink"
+            ctx.lineTo(201, 300);
+            ctx.fillStyle = "pink";
             ctx.fill();
+            ctx.closePath();
+
             
-            // x = r*cos(fi)
-            // y = r*sin(fi)
 
+            ctx.beginPath();
+            ctx.arc(200, 200, 100, pi/2, 7*pi/6);
+            ctx.fillStyle = "blue";
+            ctx.fill();
 
-            // ctx.beginPath();
-            // ctx.moveTo(200, 300);
-            // ctx.lineTo(200, 200);
-            // ctx.lineTo(100*Math.cos(7*pi/6), 100*Math.sin(7*pi/6))
-            // ctx.closePath();
-            // ctx.fillStyle = "pink"
-            // ctx.fill();
+            ctx.moveTo(200, 300);
+            ctx.lineTo(200, 200);
+            ctx.lineTo(113, 150);
+            ctx.fill();
+
+            ctx.closePath();
+
+            ctx.beginPath();
+            ctx.arc(200, 200, 100, 7*pi/6, 2*pi);
+            ctx.fillStyle = "green";
+            ctx.fill();
+
+            ctx.moveTo(113, 150);
+            ctx.lineTo(200, 200);
+            ctx.lineTo(300, 200);
+            ctx.fill();
+
+            ctx.closePath();
+            
+
+            ctx.font = "14pt serif";
+            ctx.fillRect(400, 100, 20, 20);
+            ctx.fillText("Учёба", 430, 117);
+            ctx.fillStyle = "pink";
+            ctx.fillRect(400, 150, 20, 20);
+            ctx.fillText("Другое", 430, 167);
+            ctx.fillStyle = "blue";
+            ctx.fillRect(400, 200, 20, 20);
+            ctx.fillText("Сон", 430, 217);
+
+            ctx.beginPath();
+            ctx.font = "20pt serif";
+            ctx.fillStyle = "red";
+            ctx.shadowColor = "#bbbbbb";
+            ctx.shadowBlur = 10;
+            ctx.shadowOffsetX = 5;
+            ctx.shadowOffsetY = 5;
+
+            ctx.fillText("Диаграмма МОЙ ДЕНЬ", 400, 40);
+        
+            ctx.closePath();
         }
     </script>
 </body>
