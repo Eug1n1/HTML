@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <canvas id='draw' width="1000" height="1000"></canvas>
+
+    <script>
+        var canvas = document.getElementById("draw");
+        var ctx = canvas.getContext("2d");
+        var pi = Math.PI;
+
+        drawDiagr();
+
+        function drawGist(){
+            var grad = ctx.createLinearGradient(100,100,100,350);
+            grad.addColorStop(0,"#e600ff");
+            grad.addColorStop(1,"#66e6ff");
+
+            var img = new Image();
+            img.src = 'pattern.png';
+            img.onload = function() {
+                var pattern = ctx.createPattern(img, 'repeat');
+                ctx.fillStyle = pattern;
+                ctx.fillRect(250, 100, 100, 200)
+            };
+
+
+            ctx.font = "10pt serif";
+            ctx.beginPath();
+            ctx.moveTo(80, 0);    
+            ctx.lineTo(80, 300);  
+            ctx.lineTo(600, 300);  
+            ctx.stroke(); 
+
+            ctx.fillText("Кол-во часов", 5, 10);
+            ctx.fillText("Досуг", 560, 320);
+            ctx.fillStyle = grad;
+            ctx.fillRect(100, 50, 100, 250)
+            ctx.fillStyle = "skyblue"
+            ctx.fillRect(400, 150, 100, 150)
+            ctx.fillStyle = "black"
+            ctx.font = "14pt serif";
+            ctx.fillText("Сон", 130, 320)
+            ctx.fillText("Университет", 250, 320)
+            ctx.fillText("Другое", 430, 320)
+
+            ctx.beginPath();
+            ctx.moveTo(75, 250);    
+            ctx.lineTo(85, 250); 
+
+            ctx.moveTo(75, 200);    
+            ctx.lineTo(85, 200);
+
+            ctx.moveTo(75, 150);    
+            ctx.lineTo(85, 150);
+
+            ctx.moveTo(75, 100);    
+            ctx.lineTo(85, 100); 
+
+            ctx.moveTo(75, 50);    
+            ctx.lineTo(85, 50);
+            ctx.stroke(); 
+        }
+
+        function  drawDiagr(){
+        
+            ctx.arc(200, 200, 100, 0, pi/2)
+            ctx.fillStyle = "pink"
+            ctx.fill();
+
+            ctx.beginPath();
+            ctx.moveTo(301, 200);
+            ctx.lineTo(200, 200);
+            ctx.lineTo(201, 300)
+            ctx.closePath();
+            ctx.fillStyle = "pink"
+            ctx.fill();
+            
+            // x = r*cos(fi)
+            // y = r*sin(fi)
+
+
+            // ctx.beginPath();
+            // ctx.moveTo(200, 300);
+            // ctx.lineTo(200, 200);
+            // ctx.lineTo(100*Math.cos(7*pi/6), 100*Math.sin(7*pi/6))
+            // ctx.closePath();
+            // ctx.fillStyle = "pink"
+            // ctx.fill();
+        }
+    </script>
+</body>
+</html>
